@@ -50,12 +50,6 @@ class AutomatedBot
         if ($this->isBye($query)) { // if bye
             return $this->responses['universal']['bye'];
         }
-        if ($this->isRequestingHuman($query)) {
-            return $this->responses['universal']['request_person'];
-        }
-        if ($this->isRequestingHuman($query) === false) {
-            return $this->responses['universal']['request_personX'];
-        }
         if ($this->isYellQuestion($query) && !is_null($topic)) { // if question
             $query = strtolower($query);
 
@@ -83,6 +77,12 @@ class AutomatedBot
                 return $this->responses['universal']['rude'];
             }
             return $this->responses['universal']['rude1'];
+        }
+        if ($this->isRequestingHuman($query)) {
+            return $this->responses['universal']['request_person'];
+        }
+        if ($this->isRequestingHuman($query) === false) {
+            return $this->responses['universal']['request_personX'];
         }
 
         return $this->responses['universal']['unsure'];
