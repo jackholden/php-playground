@@ -1,0 +1,17 @@
+{
+  "medical":{
+    "headache":"Make sure you drink plenty of water.. for more info visit nhs.uk",
+    "broken arm":"Please dial 999. An ambulance will be on the way",
+    "cough":"You might have covid, please order a test and stay home."
+  },
+  "weather":{
+    "sunny":"its sunny",
+    "stormy":"its stormy",
+    "rainy":"its raining"
+  },
+  "test":{
+    "dog":"a dog?",
+    "cat":"a cat?",
+    "fish":"a fish?"
+  }
+}
